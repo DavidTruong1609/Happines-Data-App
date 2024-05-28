@@ -1,0 +1,35 @@
+/* src/pages/Rankings/Rankings.css */
+
+.rankings-container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+.year-selector {
+    margin-bottom: 20px;
+}
+
+.ag-theme-balham {
+    margin: 0 auto; /* Center horizontally */
+    max-width: 600px; /* Limit the maximum width */
+}
+
+.year-selector-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.badge-container {
+    margin-bottom: 10px; /* Adjust as needed */
+}
+
+.year-selector label {
+    margin-right: 10px; /* Add space between label and select */
+}
+
+.badge-container .badge {
+    font-size: 0.75em; /* Adjust the font size as needed */
+    padding: 0.5em 0.75em; /* Adjust the padding as needed */
+}
