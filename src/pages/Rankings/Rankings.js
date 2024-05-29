@@ -38,13 +38,13 @@ const Rankings = () => {
     const standardiseData = (data) => {
         return data.map(item => {
             if (item["Overall rank"] !== undefined) {
-                return {...item, rank: item["Overall rank"], score: item.Score, country: item["Country or region"]}
+                return {rank: item["Overall rank"], score: item.Score, country: item["Country or region"]}
             }
             else if (item["Happiness Rank"] !== undefined) {
-                return {...item, rank: item["Happiness Rank"], score: item["Happiness Score"], country: item.Country}
+                return {rank: item["Happiness Rank"], score: item["Happiness Score"], country: item.Country}
             }
             else if (item.Happiness.Rank !== undefined) {
-                return {...item, rank: item.Happiness.Rank, score: item.Happiness.Score, country: item.Country}
+                return {rank: item.Happiness.Rank, score: parseFloat(item.Happiness.Score).toFixed(3), country: item.Country}
             }
             else {
                 return item;
