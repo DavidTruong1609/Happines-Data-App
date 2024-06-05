@@ -33,3 +33,28 @@
     font-size: 0.75em; /* Adjust the font size as needed */
     padding: 0.5em 0.75em; /* Adjust the padding as needed */
 }
+
+.year-selector select {
+    font-size: 16px;
+    padding: 5px 10px; /* Adjust padding for consistency */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    background-color: #fff; /* Set background color */
+    color: #333; /* Set text color */
+    cursor: pointer; /* Show pointer cursor on hover */
+  }
+  
+  /* Style the arrow icon */
+  .year-selector select::-ms-expand {
+    display: none; /* Hide default arrow icon in IE */
+  }
+  
+  .year-selector select::after {
+    content: '\25BC'; /* Unicode for down arrow */
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    pointer-events: none; /* Ensure arrow doesn't interfere with select functionality */
+  }
