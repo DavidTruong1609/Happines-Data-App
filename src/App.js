@@ -3,9 +3,9 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from './components/Header/Header';
 import Rankings from './pages/Rankings/Rankings';
-import Search from './pages/Search';
+import Search from './pages/Search/Search';
 import Factors from './pages/Factors';
-import Register from './pages/Register';
+import Register from './pages//Register/Register';
 import Login from './pages/Login';
 
 function App() {

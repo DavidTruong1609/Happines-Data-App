@@ -1,0 +1,46 @@
+/* Styles for the search container */
+.search-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+  
+.search-container h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    text-align: center; /* Center align */
+}
+  
+.search-container p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-align: center; /* Center align */
+}
+  
+/* Styles for the country selector */
+.country-selector-container {
+    margin-bottom: 20px;
+    text-align: center; /* Center align */
+}
+  
+.country-selector label {
+    font-size: 16px;
+    margin-right: 10px;
+    display: inline-block; /* Ensures label is centered */
+}
+  
+.country-selector select {
+    font-size: 16px;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    display: inline-block; /* Ensures select is centered */
+}
+
+/* Styles for centering data in AgGridReact cells */
+.ag-theme-balham .ag-root-wrapper .ag-cell {
+    text-align: center; /* Center align cell content */
+  }
+  
