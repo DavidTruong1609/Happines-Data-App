@@ -1,17 +1,15 @@
-/* src/pages/Rankings/Rankings.css */
-
 .rankings-container {
     text-align: center;
     padding: 20px;
-  }
+}
   
 .year-selector {
     margin-bottom: 20px;
 }
 
 .ag-theme-balham {
-    margin: 0 auto; /* Center horizontally */
-    max-width: 600px; /* Limit the maximum width */
+    margin: 0 auto;
+    max-width: 600px;
 }
 
 .year-selector-container {
@@ -22,39 +20,37 @@
 }
 
 .badge-container {
-    margin-bottom: 10px; /* Adjust as needed */
+    margin-bottom: 10px;
 }
 
 .year-selector label {
-    margin-right: 10px; /* Add space between label and select */
+    margin-right: 10px;
 }
 
 .badge-container .badge {
-    font-size: 0.75em; /* Adjust the font size as needed */
-    padding: 0.5em 0.75em; /* Adjust the padding as needed */
+    font-size: 0.75em;
+    padding: 0.5em 0.75em;
 }
 
 .year-selector select {
     font-size: 16px;
-    padding: 5px 10px; /* Adjust padding for consistency */
+    padding: 5px 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
     outline: none;
-    background-color: #fff; /* Set background color */
-    color: #333; /* Set text color */
-    cursor: pointer; /* Show pointer cursor on hover */
-  }
+    color: #333;
+    cursor: pointer;
+}
+
+.year-selector select::-ms-expand {
+    display: none;
+}
   
-  /* Style the arrow icon */
-  .year-selector select::-ms-expand {
-    display: none; /* Hide default arrow icon in IE */
-  }
-  
-  .year-selector select::after {
-    content: '\25BC'; /* Unicode for down arrow */
+.year-selector select::after {
+    content: '\25BC';
     position: absolute;
     top: 50%;
     right: 10px;
     transform: translateY(-50%);
-    pointer-events: none; /* Ensure arrow doesn't interfere with select functionality */
-  }
+    pointer-events: none;
+}
